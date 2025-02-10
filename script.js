@@ -44,14 +44,14 @@ function playGame(human){
                 //increment computer score by one
                 computerScore++;
                 //print out "You lose. computerChoice beats humanChoice"
-                resultDisplay.textContext=`You lose. ${computerChoice} beats ${humanChoice}`
+                resultDisplay.innerHTML=`You lose. ${computerChoice} beats ${humanChoice}`
             }
             //if computer chooses scissors
             else if(computerChoice=="scissors"){
                 //increment human score by one
                 humanScore++;
                 //print out "You win. humanChoice beats computerChoice"
-                resultDisplay.textContext=`You win. ${humanChoice} beats ${computerChoice}`
+                resultDisplay.innerHTML=`You win. ${humanChoice} beats ${computerChoice}`
             }
         }
         //if human player choses paper
@@ -62,14 +62,14 @@ function playGame(human){
                     //increment computer score by one
                     computerScore++;
                     //print out "You lose. computerChoice beats humanChoice"
-                    resultDisplay.textContext=`You lose. ${computerChoice} beats ${humanChoice}`
+                    resultDisplay.innerHTML=`You lose. ${computerChoice} beats ${humanChoice}`
                 }
                 //if computer chooses rock
                 else if(computerChoice=="rock"){
                     //increment human score by one
                     humanScore++;
                     //print out "You win. humanChoice beats computerChoice"
-                    resultDisplay.textContext=`You win. ${humanChoice} beats ${computerChoice}`
+                    resultDisplay.innerHTML=`You win. ${humanChoice} beats ${computerChoice}`
                 }
             }
         //if human player choses scissors
@@ -80,14 +80,14 @@ function playGame(human){
                     //increment computer score by one
                     computerScore++;
                     //print out "You lose. computerChoice beats humanChoice"
-                    resultDisplay.textContext=`You lose. ${computerChoice} beats ${humanChoice}`
+                    resultDisplay.innerHTML=`You lose. ${computerChoice} beats ${humanChoice}`
                 }
                 //if computer chooses paper
                 if(computerChoice==="paper"){
                     //increment human score by one
                     humanScore++;
                     //print out "You win. humanChoice beats computerChoice"
-                    resultDisplay.textContext=`You win. ${humanChoice} beats ${computerChoice}`
+                    resultDisplay.innerHTML=`You win. ${humanChoice} beats ${computerChoice}`
                 }
             }
     
